@@ -6,7 +6,6 @@ public class Main {
     public static void main(String[] args) {
         Player player = new Player(20, 30, 3, 1, 5);
         Monster monster = new Monster(20, 30, 4, 1, 3);
-        //System.out.println("Монстр HP"+monster.getHealth());
         while (monster.getAliveStatus() & player.getAliveStatus()){
             if ( player.getAliveStatus()){
                 player.isAttacked(monster);
